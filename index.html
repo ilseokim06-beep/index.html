@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>우리 조 버킷리스트 아트 월</title>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Nanum Pen Script', cursive;
             background-color: #d4b895;
@@ -14,41 +20,80 @@
             text-align: center;
             padding-bottom: 100px;
         }
+
         header {
             margin: 60px auto 40px auto;
             background-color: rgba(255, 255, 255, 0.9);
             display: inline-block;
             padding: 20px 40px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 20px;
             z-index: 100;
         }
-        h1 { color: #333; font-size: 2.8rem; margin-bottom: 10px; }
-        .clearfix::after { content: ""; display: block; clear: both; }
-        .gallery-container { width: 90%; max-width: 1200px; margin: 0 auto; }
-        
+
+        h1 {
+            color: #333;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .gallery-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         /* 공통 카드 스타일 */
         .card {
-            float: left; width: 31.33%; margin: 1%;
+            float: left;
+            width: 31.33%;
+            margin: 1%;
             background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%);
             padding: 15px 15px 35px 15px;
             border-radius: 2px 2px 15px 5px;
-            box-shadow: 3px 5px 15px rgba(0,0,0,0.15);
-            position: relative; /* 자식인 badge의 기준점 */
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+            /* 자식인 badge의 기준점 */
             transform: rotate(-3deg);
             transition: transform 0.3s ease, z-index 0s;
         }
+
         .card:hover {
             transform: scale(1.05) rotate(0deg);
             z-index: 10;
         }
-        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; }
-        .card h2 { color: #2c3e50; font-size: 1.8rem; margin-bottom: 10px; }
-        .card p { color: #444; font-size: 1.3rem; text-align: left; line-height: 1.5; }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 1.3rem;
+            text-align: left;
+            line-height: 1.5;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>🏖️ 2026 버킷리스트 아트 월 🏖️</h1>
@@ -56,7 +101,116 @@
     </header>
     <main class="gallery-container clearfix">
         <!-- 팀원들의 코드가 들어갈 자리입니다 -->
+        <!DOCTYPE html>
+        <html lang="ko">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>내 버킷리스트 카드</title>
+            <style>
+                body {
+                    margin: 0;
+                    min-height: 100vh;
+                    background: linear-gradient(to bottom, #a1c4fd, #fbc2eb);
+                    font-family: 'Noto Sans KR', sans-serif;
+                }
+
+                .card {
+                    width: 300px;
+                    margin: 50px auto;
+                    background: #ffffffcc;
+                    padding: 15px 15px 35px 15px;
+                    border-radius: 15px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+                    position: relative;
+                }
+
+                .card img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 15px;
+                }
+
+                .card h2 {
+                    color: #000000;
+                    margin-bottom: 10px;
+                }
+
+                .card p {
+                    color: #000000;
+                    margin: 8px 0;
+                }
+
+                .badge {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #ff6f91;
+                    color: white;
+                    padding: 6px 10px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                }
+
+                .memo {
+                    visibility: hidden;
+                    margin-top: 15px;
+                    padding: 10px;
+                    background-color: #fff0f6;
+                    border-left: 5px solid #ff6f91;
+                    font-size: 0.95rem;
+                    border-radius: 5px;
+                }
+
+                .card:hover .memo {
+                    visibility: visible;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="card">
+                <div class="badge">🌸</div>
+
+                <img src="https://www.ana.co.jp/japan-travel-planner/traditional-culture/8-must-visit-castles/images/spot7-001.jpg"
+                    alt="오사카성   ">
+
+                <h2>✨일서의 꿈</h2>
+                <p>🌸1. 올해안에 JLPT N2 따기</p>
+                <p>🚘2. 한강 드라이브</p>
+
+                <div class="memo">
+                    TMI : 사실 일본어 잘 못함.
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_2048,w_2048/54c1befc-094b-4464-bbc7-ba754984fd6f.jpeg"
+                    alt="일본풍경">
+
+                <span class="badge">2026</span>
+                
+                <h2>✨ 동혁의 2026 버킷리스트</h2>
+                <p>✈️도쿄가서 사진 왕창찍기</p>
+                <p>👕내 스타일에 맞는 코디 찾기</p>
+                <p>📷동영상 편집 마스터하기</p>
+                
+                <div class="memo">
+                    
+                    <p class="memo">사실 편한 옷 제일 좋아함</p>
+                    <p class="memo">편집 해봤는데 10분하고 끔</p>
+                </div>
+            </div>
+        </body>
+
+        </html>
 
     </main>
 </body>
+
 </html>
